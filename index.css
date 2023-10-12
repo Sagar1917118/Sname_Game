@@ -122,5 +122,6 @@
     }
     .subScore{
         flex-direction:row;
+        gap:0;
     }
 } 
