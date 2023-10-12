@@ -20,7 +20,12 @@ var gamePlay=document.getElementById("playAudio");
 var gameOverAudio=document.getElementById("gameOverAudio");
 var levelUpAudio=document.getElementById("levelUpAudio");
 // ----
-highScore.innerText=`${localStorage.getItem("highScore")}`;
+if(!localStorage.getItem("highScore")){
+    highScore.innerText="0";
+}
+else{
+    highScore.innerText=`${localStorage.getItem("highScore")}`;
+}
 buttons.addEventListener("click",()=>{
     if(playFlag){
         window.requestAnimationFrame(main);

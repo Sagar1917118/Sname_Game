@@ -58,12 +58,12 @@
     gap:10px;
 }
 .subScore div{
-    width:180px;
+    min-width:150px;
     height:50px;
     display:flex;
     justify-content:space-around;
     align-items:center;
-    font-size:25px;
+    font-size:15px;
     font-weight:bold;
     border:2px solid black;
 }
@@ -94,7 +94,7 @@
     /* display:none; */
 }
 .Buttons{
-    width:320px;
+    min-width:300px;
     height:60px;
     display:flex;
     justify-content:space-evenly;
@@ -113,8 +113,8 @@
 @media (max-width:830px) {
     .container{
         flex-direction:column;
-        justify-content:space-around;
-        gap:10px;
+        justify-content:start;
+        gap:15px;
     }
     .scores{
         margin-left:0px;
@@ -122,6 +122,6 @@
     }
     .subScore{
         flex-direction:row;
-        gap:0;
+        gap:1px;
     }
 } 
